@@ -1,0 +1,116 @@
+﻿body {
+    background-color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header & footer */
+
+header {
+    font-size: x-large;
+    text-align: center;
+    background-color: #555;
+    color: #ddd;
+    padding: 5px;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+
+    header a {
+        background-color: #ddd;
+        color: #555;
+        text-decoration: none;
+        padding: 0 3px 0 3px;
+    }
+
+        header a:hover {
+            background-color: #555;
+            color: #ddd;
+            text-decoration: underline;
+        }
+
+footer {
+    text-align: center;
+    background-color: #555;
+    color: #ddd;
+    padding: 5px;
+    font-family: Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+    footer a {
+        background-color: #ddd;
+        color: #555;
+        text-decoration: none;
+        padding: 0 3px 0 3px;
+    }
+
+        footer a:hover {
+            background-color: #555;
+            color: #ddd;
+            text-decoration: underline;
+        }
+
+/* wheelnav */
+
+.wheelNav {
+    height: 600px;
+    width: 600px;
+    margin: auto;
+}
+
+    .wheelNav > svg {
+        height: 100%;
+        width: 100%;
+    }
+
+@media (max-width: 800px) {
+    .wheelNav {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .wheelNav {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/* GitHub corner */
+#github {
+    width: 100px;
+    height: 100px;
+}
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+    0%,100% {
+        transform: rotate(0);
+    }
+
+    20%,60% {
+        transform: rotate(-25deg);
+    }
+
+    40%,80% {
+        transform: rotate(10deg);
+    }
+}
+
+@media (max-width:500px) {
+    #github {
+        width: 50px;
+        height: 50px;
+    }
+    .github-corner:hover .octo-arm {
+        animation: none;
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+    }
+}
